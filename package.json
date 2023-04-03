@@ -1,0 +1,37 @@
+{
+  "name": "delivery",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "To run this will need to run \r npx ts-node test.ts",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon --watch \"src/**/*.ts\" --exec ts-node --esm src/index.ts"
+  },
+  "nodemonConfig": {
+    "exec":"npm dev",
+    "watch":[
+      "src"
+    ],
+    "ignore": [
+      "**/test/**",
+      "node_modules/*"
+    ],
+    "ext":".json,.ts,.env",
+    "stdin": false,
+    "restartable":false,
+    "stdio": "inherit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.3"
+  },
+  "dependencies": {
+    "inquirer": "^9.1.5",
+    "nanospinner": "^1.1.0"
+  }
+}

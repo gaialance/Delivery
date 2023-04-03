@@ -1,0 +1,28 @@
+{
+    "data":[
+        {
+            "code": "OFR001",
+            "distance": "200",
+            "comparison": "<",
+            "weight": "70-200",
+            "discount": "10",
+            "discountType": "percentage"
+        },
+        {
+            "code": "OFR002",
+            "distance": "50-150",
+            "comparison": "between",
+            "weight": "100-250",
+            "discount": "7",
+            "discountType": "percentage"
+        },
+        {
+            "code": "OFR003",
+            "distance": "50-250",
+            "comparison": "between",
+            "weight": "10-150",
+            "discount": "5",
+            "discountType": "percentage"
+        }
+    ]
+}
