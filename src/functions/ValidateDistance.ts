@@ -11,6 +11,7 @@ export const ValidateDistance = (distance : string , packageDistance:number, com
 
     // check if packageDistance within a range
     if(comparison === 'between' && distance.split('-').length == 2){
+        // split the distance string into array then deconstruct the array into min and max
         const [minDistance , maxDistance ] = distance.split('-')
         return packageDistance >= +minDistance && packageDistance <= +maxDistance
     }
