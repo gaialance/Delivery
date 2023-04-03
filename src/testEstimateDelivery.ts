@@ -18,3 +18,5 @@ const tempPackage:PackageDeliveryDetails = {
 }
 
 const packageCalculateEstimate = await findEstimateTime(tempPackage)
+
+console.log(packageCalculateEstimate)

@@ -7,9 +7,12 @@ import {
 export const CalculateTotalDeliveryCost = (
     calculateTotalDeliveryCostType:CalculateTotalDeliveryCostType
 ) => {
-let total = +calculateTotalDeliveryCostType.baseDeliveryCost +
-(+calculateTotalDeliveryCostType.packageTotalWeight*10) +
-(+calculateTotalDeliveryCostType.packageDistanceToDestination*5)
 
-return total
+    // calculate the delivery cost
+    // formula is baseCost + (weight * 10) + (distance * 5 )
+    let total = +calculateTotalDeliveryCostType.baseDeliveryCost +
+    (+calculateTotalDeliveryCostType.packageTotalWeight*10) +
+    (+calculateTotalDeliveryCostType.packageDistanceToDestination*5)
+
+    return total
 }

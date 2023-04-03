@@ -4,6 +4,8 @@ import {
 } from "../type/index.js";
 
 export const CalculateEstimatetime = (packages:Package[],maxSpeed:number,currentTime:number ) : PackageWithDeliveryTime[] =>{
+
+    // function just loop all the package then return the currentTime + distance / max speed
     const packagesWithDeliveryTime = packages.map((packageItem) => {
         return ({
         ...packageItem,
